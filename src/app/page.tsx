@@ -11,10 +11,12 @@ import {
   LinkedInIcon,
   SoundcloudIcon
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoEtteilla from '@/images/logos/etteilla.png'
+import logoCySecTech from '@/images/logos/cysectech.png'
+import logoPetSquare from '@/images/logos/petsquare.png'
+import logoClearGene from '@/images/logos/cleargene.jpg'
+import logoHD from '@/images/logos/hackerdojo.png'
+
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/music.jpg'
 import image3 from '@/images/photos/snow.jpg'
@@ -85,7 +87,7 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
+      <Card.Title href={`/blog/${article.slug}`}>
         {article.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
@@ -142,6 +144,7 @@ function SocialLink({
 interface Role {
   company: string
   title: string
+  url?: string
   logo: ImageProps['src']
   start: string | { label: string; dateTime: string }
   end: string | { label: string; dateTime: string }
@@ -155,16 +158,22 @@ function Role({ role }: { role: Role }) {
 
   let endLabel = typeof role.end === 'string' ? role.end : role.end.label
   let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
+  let company
+  if (role.url) {
+      company = ``
+  } else {
+      company = role.company
+  }
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+      <div className="relative mt-1 flex h-12 w-12 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+        <Image src={role.logo} alt="" className="h-10 w-10 rounded-full" unoptimized />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
         <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
+        <a href={role.url} target="_blank" rel="noopener">{role.company}</a>
         </dd>
         <dt className="sr-only">Role</dt>
         <dd className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -188,8 +197,9 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'Etteilla Foundation',
-      title: 'Full stack eng',
-      logo: logoPlanetaria,
+      title: 'Volunteer Full tack Eng',
+      url: "https://etteilla.org",
+      logo: logoEtteilla,
       start: '2022',
       end: {
         label: 'Present',
@@ -198,24 +208,34 @@ function Resume() {
     },
     {
       company: 'CySecTech',
-      title: 'Full stack eng/ Founder',
-      logo: logoAirbnb,
+      title: 'Founder / Full Stack Eng',
+      url: "https://cysectech.org",
+      logo: logoCySecTech,
       start: '2018',
       end: '2023',
     },
     {
-      company: 'PetSquare, LLC',
-      title: 'Full stack eng/ Founder',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'ClearGene',
+      title: 'Full Stack Eng ',
+      url: "https://cleargene.com",
+      logo: logoClearGene,
+      start: 'Jul 2020',
+      end: 'Aug 2020',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'PetSquare, LLC',
+      title: 'Founder / Full Stack Eng ',
+      logo: logoPetSquare,
+      start: '2014',
+      end: '2020',
+    },
+    {
+      company: 'Hacker Dojo',
+      title: 'Volunteer / Board member',
+      url:"https://hackerdojo.org",
+      logo: logoHD,
+      start: '2016',
+      end: '2019',
     },
   ]
 
@@ -230,8 +250,8 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button href="https://celine.im/Resume_CelineBursztein.pdf" rel="noopener" target="_blank" variant="secondary" className="group mt-6 w-full">
+        Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
@@ -276,7 +296,7 @@ export default async function Home() {
             Full stack developer and electronic music producer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Bonjour! My name is Celine. I am french full stack developer based in Mountain View, California. In my spare time I also produce electronic music under the name Aelixia! 
+            Bonjour! My name is Celine. I am a french full stack developer based in Mountain View, California. In my spare time I also produce electronic music under the name Aelixia! 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
