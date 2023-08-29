@@ -17,10 +17,10 @@ import logoPetSquare from '@/images/logos/petsquare.png'
 import logoClearGene from '@/images/logos/cleargene.jpg'
 import logoHD from '@/images/logos/hackerdojo.png'
 
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/music.jpg'
-import image3 from '@/images/photos/snow.jpg'
-import image4 from '@/images/photos/music.jpg'
+import image1 from '@/images/photos/fun.jpg'
+import image2 from '@/images/photos/talk.jpg'
+import image3 from '@/images/photos/music.jpg'
+import image4 from '@/images/photos/snow.jpg'
 
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
@@ -107,7 +107,7 @@ function SocialLink({
 }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className="h-6 w-6 fill-purple-500 transition group-hover:fill-purple-600 dark:fill-purple-400 dark:group-hover:fill-purple-500" />
     </Link>
   )
 }
@@ -268,7 +268,7 @@ function Photos() {
           <div
             key={"image" + imageIndex}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden ring-4 ring-purple-300 rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length],
             )}
           >
