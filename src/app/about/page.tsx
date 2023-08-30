@@ -76,19 +76,19 @@ export default function About() {
             <p>
               Since I was a kid, I was crazy about animals that's why I decided to build PetSquare, my first startup.
               PetSquare was a web search engine dedicated to animal owners. PetSquare was created to help pet and animal owners
-               to find good products and places.
+               to find good products and places for their animals.
             </p>
             <p>
               Soon after I moved to the US I attended my first DEF CON in Las Vegas and I fell in in love with hacking and security.
               I gave <TextLink href="https://youtu.be/7AAilkNRQAw?si=KWv9the_KbiDaHjP">my first talk at DEF CON 22</TextLink> about video games and another talk on <TextLink href="https://youtu.be/bU6bosBN5D0?si=BCv5o02PlGDKFmtL">cheating at poker at DEF CON 24</TextLink>.
             </p>
             <p>
-              Since shutting down my startup I have been focused on non profit work, I created <a className="text-purple-300 hover:text-purple-400" href="https://cysectech.org" target='_blank' rel='noopener'>Cyber Security Technologies Foundation</a>, a 501c3 non profit
+              Since shutting down my startup I have been focused on non profit work, I created <TextLink href="https://cysectech.org">Cyber Security Technologies Foundation</TextLink>, a 501c3 non profit
               organization dedicated to enabling a trustworthy cyberworld for all.
               Our main product: <TextLink href="https://truetesting.org">TrueTesting</TextLink> is focused on testing and recommending products that you can buy online without conflict of interests.
             </p>
             <p>
-              Today, I’m a full stack developer looking for a new opportunity. Meanwhile I am improving my frontend skills on an online museum for vintage playing cards created by <TextLink href="https://etteilla.org">Etteilla Foundation</TextLink>. 
+              Today, I’m a full stack developer looking for a new opportunity. Meanwhile I am improving my frontend skills with React and Typescript on an online museum for vintage playing cards created by <TextLink href="https://etteilla.org">Etteilla Foundation</TextLink>. 
             </p>
             
           </div>
@@ -96,18 +96,18 @@ export default function About() {
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink
-              href="https://www.linkedin.com/in/celinefabrybursztein/"
+              href={process.env.LINKEDIN || ""}
               icon={LinkedInIcon} className="mt-4">
               Follow on LinkedIn
             </SocialLink>
 
-            <SocialLink href="https://github.com/Cealtea" icon={GitHubIcon} className="mt-4">
+            <SocialLink href={process.env.GITHUB || ""} icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="https://instagram.com/cealtea" icon={InstagramIcon} className="mt-4">
+            <SocialLink href={process.env.INSTAGRAM || ""} icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="https://soundcloud.com/aelixia" icon={SoundcloudIcon} className="mt-4">
+            <SocialLink href={process.env.SOUNDCLOUD || ""} icon={SoundcloudIcon} className="mt-4">
               Follow on Soundcloud
             </SocialLink>
             <SocialLink

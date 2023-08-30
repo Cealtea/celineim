@@ -300,28 +300,28 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://www.linkedin.com/in/celinefabrybursztein/"
+              href={process.env.LINKEDIN || ""}
               target="_blank"
               rel="noopener"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
             <SocialLink
-              href="https://github.com/Cealtea"
+              href={process.env.GITHUB || ""}
               aria-label="Follow on GitHub"
               target="_blank"
               rel="noopener"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://instagram.com/cealtea"
+              href={process.env.INSTAGRAM || ""}
               aria-label="Follow on Instagram"
               target="_blank"
               rel="noopener"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://soundcloud.com/aelixia"
+              href={process.env.SOUNDCLOUD || ""}
               target="_blank"
               rel="noopener"
               aria-label="Follow on Soundcloud"
