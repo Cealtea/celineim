@@ -12,6 +12,7 @@ import {
   DiscordIcon,
   MailIcon
 } from '@/components/Icons'
+import { TextLink } from '@/components/Links'
 import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({
@@ -41,6 +42,7 @@ function SocialLink({
 }
 
 
+
 export const metadata: Metadata = {
   title: 'About',
   description:
@@ -68,7 +70,7 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
               I live in Mountain View, California with my husband and
-              our cat <a className="text-purple-300 hover:text-purple-400" href="https://instagram.com/nikifromthebay" target='_blank' rel='noopener'>Niki</a>.</p>
+              our cat <TextLink href="https://instagram.com/nikifromthebay">Niki</TextLink>.</p>
             <p>I have a wide range of interests from animals and health and fitness to software and hardware  security, electric cars, video games, electronic music or shooting guns!
             </p>
             <p>
@@ -78,15 +80,15 @@ export default function About() {
             </p>
             <p>
               Soon after I moved to the US I attended my first DEF CON in Las Vegas and I fell in in love with hacking and security.
-              I gave <a className="text-purple-300 hover:text-purple-400" href="https://youtu.be/7AAilkNRQAw?si=KWv9the_KbiDaHjP" target='_blank' rel='noopener'>my first talk at DEF CON 22</a> about video games and another talk on <a className="text-purple-300 hover:text-purple-400" href="https://youtu.be/bU6bosBN5D0?si=BCv5o02PlGDKFmtL" target='_blank' rel='noopener'>cheating at poker at DEF CON 24</a>.
+              I gave <TextLink href="https://youtu.be/7AAilkNRQAw?si=KWv9the_KbiDaHjP">my first talk at DEF CON 22</TextLink> about video games and another talk on <TextLink href="https://youtu.be/bU6bosBN5D0?si=BCv5o02PlGDKFmtL">cheating at poker at DEF CON 24</TextLink>.
             </p>
             <p>
               Since shutting down my startup I have been focused on non profit work, I created <a className="text-purple-300 hover:text-purple-400" href="https://cysectech.org" target='_blank' rel='noopener'>Cyber Security Technologies Foundation</a>, a 501c3 non profit
               organization dedicated to enabling a trustworthy cyberworld for all.
-              Our main product: <a className="text-purple-300 hover:text-purple-400" href="https://truetesting.org" target='_blank' rel='noopener'>TrueTesting</a> is focused on testing and recommending products that you can buy online without conflict of interests.
+              Our main product: <TextLink href="https://truetesting.org">TrueTesting</TextLink> is focused on testing and recommending products that you can buy online without conflict of interests.
             </p>
             <p>
-              Today, I’m a full stack developer looking for a new opportunity. Meanwhile I am improving my frontend skills on an online museum for vintage playing cards created by <a className="text-purple-300 hover:text-purple-400" href="https://etteilla.org" target='_blank' rel='noopener'>Etteilla Foundation</a>. 
+              Today, I’m a full stack developer looking for a new opportunity. Meanwhile I am improving my frontend skills on an online museum for vintage playing cards created by <TextLink href="https://etteilla.org">Etteilla Foundation</TextLink>. 
             </p>
             
           </div>

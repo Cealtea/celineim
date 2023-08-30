@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Celine',
     default:
-      `${process.env.title}`,
+      `${process.env.TITLE}`,
   },
-  description: `${process.env.description}`,
+  description: `${process.env.DESC}`,
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
