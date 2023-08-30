@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
+import { routes } from '@/app/routes'
 
 function NavLink({
   href,
@@ -27,10 +28,10 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">About</NavLink>
-                {/* <NavLink href="/projects">Projects</NavLink> */}
-                <NavLink href="/blog">Blog</NavLink>
-                {/* <NavLink href="/music">Music</NavLink> */}
+                
+              {routes.map((route, routeIndex) => (
+                  <NavLink key={routeIndex} href={route.path}>{ route.name }</NavLink> 
+                ))}
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Celine. All rights

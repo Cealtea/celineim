@@ -2,7 +2,7 @@ import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
+// import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
@@ -10,7 +10,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   SoundcloudIcon
-} from '@/components/SocialIcons'
+} from '@/components/Icons'
 import logoEtteilla from '@/images/logos/etteilla.png'
 import logoCySecTech from '@/images/logos/cysectech.png'
 import logoPetSquare from '@/images/logos/petsquare.png'
