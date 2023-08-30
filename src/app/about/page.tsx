@@ -100,16 +100,14 @@ export default function About() {
               I gave <a className="text-purple-300 hover:text-purple-400" href="https://youtu.be/7AAilkNRQAw?si=KWv9the_KbiDaHjP" target='_blank' rel='noopener'>my first talk at DEF CON 22</a> about video games and another talk on <a className="text-purple-300 hover:text-purple-400" href="https://youtu.be/bU6bosBN5D0?si=BCv5o02PlGDKFmtL" target='_blank' rel='noopener'>cheating at poker at DEF CON 24</a>.
             </p>
             <p>
-              Since shutting down my startup I have been focus on non profit work, I created <a className="text-purple-300 hover:text-purple-400" href="https://cysectech.org" target='_blank' rel='noopener'>Cyber Security Technologies Foundation</a>, a 501c3 non profit
+              Since shutting down my startup I have been focused on non profit work, I created <a className="text-purple-300 hover:text-purple-400" href="https://cysectech.org" target='_blank' rel='noopener'>Cyber Security Technologies Foundation</a>, a 501c3 non profit
               organization dedicated to enabling a trustworthy cyberworld for all.
               Our main product: <a className="text-purple-300 hover:text-purple-400" href="https://truetesting.org" target='_blank' rel='noopener'>TrueTesting</a> is focused on testing and recommending products that you can buy online without conflict of interests.
             </p>
             <p>
-              Today, I’m a full stack developer looking for a new opportunity and improving my frontend skills an online museum for vintage playing cards created by <a className="text-purple-300 hover:text-purple-400" href="https://etteilla.org" target='_blank' rel='noopener'>Etteilla Foundation</a>. 
+              Today, I’m a full stack developer looking for a new opportunity. Meanwhile I am improving my frontend skills on an online museum for vintage playing cards created by <a className="text-purple-300 hover:text-purple-400" href="https://etteilla.org" target='_blank' rel='noopener'>Etteilla Foundation</a>. 
             </p>
-            <p>
-              Today, I’m a full stack developer looking for a new opportunity and improving my frontend skills an online museum for vintage playing cards created by <a className="text-purple-300 hover:text-purple-400" href="https://etteilla.org" target='_blank' rel='noopener'>Etteilla Foundation</a>. 
-            </p>
+            
           </div>
         </div>
         <div className="lg:pl-20">
