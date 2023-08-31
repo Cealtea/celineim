@@ -32,7 +32,7 @@ export default function Projects() {
     <SimpleLayout
       title="Things I’ve made. Projects I’ve worked on."
       intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. 
-      Many of them are closed-source but I have recently started to open source more code so if you see something that piques your interest, check out the code."
+      Many of them are closed-source but I have recently started to open source more code on my github page. If you see something that piques your interest, check out the websites."
     >
       <ul
         role="list"

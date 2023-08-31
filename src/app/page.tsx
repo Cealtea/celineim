@@ -2,7 +2,7 @@ import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-// import { Button } from '@/components/Button'
+import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
@@ -21,6 +21,8 @@ import image1 from '@/images/photos/fun.jpg'
 import image2 from '@/images/photos/talk.jpg'
 import image3 from '@/images/photos/music.jpg'
 import image4 from '@/images/photos/snow.jpg'
+
+import resume from '@/files/resume.pdf'
 
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
@@ -250,10 +252,10 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      {/* <Button href="https://celine.im/Resume_CelineBursztein.pdf" rel="noopener" target="_blank" variant="secondary" className="group mt-6 w-full">
+      <Button href="/resume_celinebursztein.pdf" rel="noopener" target="_blank" variant="secondary" className="group mt-6 w-full">
         Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> */}
+      </Button>
     </div>
   )
 }
