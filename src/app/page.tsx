@@ -22,7 +22,6 @@ import image2 from '@/images/photos/talk.jpg'
 import image3 from '@/images/photos/music.jpg'
 import image4 from '@/images/photos/snow.jpg'
 
-import resume from '@/files/resume.pdf'
 
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
