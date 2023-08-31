@@ -296,7 +296,7 @@ export default async function Home() {
             Full stack developer passionate about electronic music.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Bonjour! My name is Celine. I am a french full stack developer based in Mountain View, California. In my spare time I also produce electronic music under the name Aelixia! 
+            Bonjour! My name is Celine. I am a french full stack developer based in Mountain View, California. In my spare time I also produce electronic music under the name EaliXia! 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
