@@ -13,12 +13,13 @@ export function TextLink({
       href={href}
       target="_blank"
       rel="noopener"
-      className="dark:text-purple-300 dark:hover:text-purple-400 text-purple-500 hover:text-purple-600"
+      className="dark:text-purple-300 dark:hover:text-purple-400 text-purple-00 hover:text-purple-600"
     >
       {children}
     </Link>
   )
 }
+
 
 
 export function ThankYouLink() {

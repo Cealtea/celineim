@@ -11,5 +11,6 @@ class Route {
 export const routes = [
     new Route('About', '/about'),
     new Route('Blog', '/blog'),
-    new Route('Projects','/projects'),
+    new Route('Projects', '/projects'),
+    new Route('Research','/publications'),
 ]

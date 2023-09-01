@@ -8,64 +8,42 @@ import logoEtteilla from '@/images/logos/etteilla.png'
 import logoTrueTesting from '@/images/logos/truetesting.jpg'
 import logoPetSquare from '@/images/logos/petsquare.png'
 import logoElie from '@/images/logos/elie.jpg'
-import logoWebSecLab from '@/images/logos/webseclab.png'
+import logoDefcon from '@/images/logos/defcon.jpg'
 import { TextLink } from '@/components/Links'
 
 const projects = [
   {
-    name: 'Etteilla Foundation',
+    name: 'Cheating at Poker James Bond Style - DEF CON 24',
     description:
-      'Leading nonprofit dedicated to preserving and promoting the rich cultural heritage of playing cards.',
-    otherLinks: [{ href: 'https://etteilla.org', label: 'https://etteilla.org' }],
-    logo: logoEtteilla,
+      'Ever dreamed of cleaning up at poker, but afraid that you are not good enough to do it on your own? Fear not! The chinese underground got you covered with high-tech concealed cheating devices that automatically read marked cards and whisper them in your ear through an ear-piece.',
+    otherLinks: [{ href: 'https://youtu.be/bU6bosBN5D0', label: 'Talk on Youtube' }],
+    logo: logoDefcon,
   },
   {
-    name: 'TrueTesting',
+    name: 'I am a legend: Hacking Hearthstone - DEF CON 22',
     description:
-      'Independent product recommendations you can trust. Rigorously tests online products to provide you conflict of interest free recommendations that will work for your use cases and will be safe to use. TrueTesting is an initiave of Cyber Security Technologies Foundation',
-    otherLinks: [{ href: 'https://truetesting.org', label: 'https://truetesting.org' }, { href: 'https://cysectech.org', label: 'https://cysectech.org' }],
-    logo: logoTrueTesting,
-  },
-  {
-    name: 'PetSquare',
-    description:
-      'Search engine for Animal owners. It was my first startup project. Unfortunately the website is no longer available',
-    otherLinks: [],
-    logo: logoPetSquare,
-  },
-  {
-    name: 'Elie Bursztein’s personal website',
-    description:
-      'Elie Bursztein leads Google’s anti-abuse research team, which invents transformative solutions that help protect users against online threats.',
-    otherLinks: [{ href: 'https://elie.net', label: 'https://elie.net' }],
-    logo: logoElie,
-  },
-  {
-    name: 'WebSecLab - a security education workbench',
-    description:
-      'Webseclab is  a virtual-machine-based web-application security student laboratory, comprising a LAMP (Linux, Apache, MySQL, PHP) stack, a variety of development tools, and the three most popular browsers for the Linux platform.',
-    otherLinks: [{ href: '/papers/webseclab-security-education-workbench.pdf', label: 'Research paper in pdf' }],
-    logo: logoWebSecLab,
+      'Want to become a legend at Hearthstone -- Blizzard’s blockbuster collecting card game -- or simply learn how to play better? Then pull up a chair by the hearth and join us for a talk about Hearthstone mechanics and how to improve your chance of winning using machine learning and data mining.',
+    otherLinks: [{ href: 'https://youtu.be/7AAilkNRQAw', label: 'Talk on Youtube' }],
+    logo: logoDefcon,
   }
-
 ]
 
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Things I’ve made. Projects I’ve worked on.',
+  title: 'Talks and Publications',
+  description: 'Things I’ve published in academia and talked about at industry conferences.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made. Projects I’ve worked on."
+      title="Talks and Publications."
       intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. 
       Many of them are closed-source but I have recently started to open source more code on my github page. If you see something that piques your interest, check out the websites."
     >
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2"
+        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-2"
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
