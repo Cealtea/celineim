@@ -65,7 +65,7 @@ export default function Projects() {
     >
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2"
+        className="grid grid-cols-1 gap-x-20 gap-y-20 sm:grid-cols-2"
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
@@ -78,7 +78,7 @@ export default function Projects() {
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-100 transition group-hover:scale-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
+              <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-100 bg-zinc-50 opacity-100 transition group-hover:scale-105 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
               <span className="absolute -inset-x-4 -inset-y-6 sm:-inset-x-6 sm:rounded-2xl" />
               <span className="relative z-10">{project.name}</span>
             </h2>
