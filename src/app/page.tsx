@@ -294,10 +294,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Full stack developer passionate about electronic music.
+            Full stack software engineer passionate about electronic music.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Bonjour! My name is Celine. I am a french full stack developer based in Mountain View, California. In my spare time I also produce electronic music under the name EaliXia! 
+            Bonjour! My name is Celine. I am a french! I am a full stack software engineer based in Mountain View, California. In my spare time I also produce electronic music under the name EaliXia! 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
