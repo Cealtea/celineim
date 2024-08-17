@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
-
+import { LinkIcon } from '@/components/Icons'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -13,7 +13,7 @@ import {
   MailIcon
 } from '@/components/Icons'
 import { TextLink } from '@/components/Links'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/celine.jpg'
 
 function SocialLink({
   className,
@@ -81,6 +81,7 @@ export default function About() {
             <p>
               Soon after I moved to the US I attended my first DEF CON in Las Vegas and I fell in in love with hacking and security.
               I gave <TextLink href="https://youtu.be/7AAilkNRQAw?si=KWv9the_KbiDaHjP">my first talk at DEF CON 22</TextLink> about video games and another talk on <TextLink href="https://youtu.be/bU6bosBN5D0?si=BCv5o02PlGDKFmtL">cheating at poker at DEF CON 24</TextLink>.
+              I am now a DEF CON Goon in XZBT team!
             </p>
             <p>
               Since shutting down my startup I have been focused on non profit work, I created <TextLink href="https://cysectech.org">Cyber Security Technologies Foundation</TextLink>, a 501c3 non profit
@@ -122,6 +123,12 @@ export default function About() {
               icon={DiscordIcon}
               className="mt-4">
               Discord:Cealtea#9881
+            </SocialLink>
+            <SocialLink
+              href="https://vcard.celine.im"
+              icon={LinkIcon}
+              className="mt-4">
+              Virtual Business Card
             </SocialLink>
           </ul>
         </div>

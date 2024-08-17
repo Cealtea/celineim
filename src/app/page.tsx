@@ -12,6 +12,7 @@ import {
   SoundcloudIcon
 } from '@/components/Icons'
 import logoEtteilla from '@/images/logos/etteilla.png'
+import logoInstrumentl from '@/images/logos/instrumentl.jpg'
 import logoCySecTech from '@/images/logos/cysectech.png'
 import logoPetSquare from '@/images/logos/petsquare.png'
 import logoClearGene from '@/images/logos/cleargene.jpg'
@@ -197,8 +198,19 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
+      company: 'Instrumentl',
+      title: 'Senior SWE',
+      url: "https://instrumentl.com",
+      logo: logoInstrumentl,
+      start: '2024',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
       company: 'Etteilla Foundation',
-      title: 'Volunteer Full tack Eng',
+      title: 'Volunteer Full Stack Eng',
       url: "https://etteilla.org",
       logo: logoEtteilla,
       start: '2022',

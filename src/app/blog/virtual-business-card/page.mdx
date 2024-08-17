@@ -1,0 +1,30 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { TextLink, ThankYouLink } from '@/components/Links'
+import Image from 'next/image'
+import vcard from './vcard.png'
+
+export const article = {
+  author: 'Celine',
+  date: '2024-08-07',
+  title: 'I did my virtual business card',
+  description: 'Virtual business card',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+
+I am happy have finally published a small website for my virtual business card.
+It is hosted for free on Cloudflare pages.
+
+<Image src={vcard} alt="screenshot of my vcard" />
+
+All my contact informations are listed and you can save them in your phone by hitting the "Save Contact" button.
+
+Have a look right [here](https://vcard.celine.im)
+
+<ThankYouLink/>
