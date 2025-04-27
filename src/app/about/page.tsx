@@ -65,13 +65,12 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I am Celine, a french full stack developer based in Silicon Valley.
+            I am Celine! I am french and a senior software engineer based in Silicon Valley.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I live in Mountain View, California with my husband and
-              our cat <TextLink href="https://instagram.com/nikifromthebay">Niki</TextLink>.</p>
-            <p>I have a wide range of interests from animals and health and fitness to software and hardware  security, electric cars, video games, electronic music or shooting guns!
+              I live in Mountain View, California with my cat <TextLink href="https://instagram.com/nikifromthebay">Niki</TextLink>.</p>
+            <p>I have a wide range of interests from animals, health and fitness to software and hardware security, electric cars, video games, electronic music or shooting guns!
             </p>
             <p>
               Since I was a kid, I was crazy about animals that's why I decided to build PetSquare, my first startup.
@@ -89,7 +88,7 @@ export default function About() {
               Our main product: <TextLink href="https://truetesting.org">TrueTesting</TextLink> is focused on testing and recommending products that you can buy online without conflict of interests.
             </p>
             <p>
-              Today, I’m a full stack developer looking for a new opportunity. Meanwhile I am improving my frontend skills with React and Typescript on an online museum for vintage playing cards created by <TextLink href="https://etteilla.org">Etteilla Foundation</TextLink>. 
+              Today, I’m a full stack senior software engineer with a preference for backend. I work for <TextLink href="https://instrumentl.com">Instrumentl</TextLink>,  a grant management platform for non-profits.
             </p>
             
           </div>
