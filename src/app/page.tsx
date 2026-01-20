@@ -202,7 +202,7 @@ function Resume() {
       title: 'Senior SWE',
       url: "https://instrumentl.com",
       logo: logoInstrumentl,
-      start: '2023',
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
@@ -215,7 +215,7 @@ function Resume() {
       logo: logoEtteilla,
       start: '2022',
       end: {
-        label: '2024',
+        label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
