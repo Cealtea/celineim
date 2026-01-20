@@ -7,7 +7,7 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Celine Bursztein',
+    template: '%s - Celine Fabry',
     default:
       `${process.env.TITLE}`,
   },
