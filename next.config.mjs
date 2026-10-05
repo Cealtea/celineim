@@ -5,6 +5,11 @@ import remarkGfm from 'remark-gfm'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  // Static export served by Cloudflare Workers Static Assets (see wrangler.jsonc)
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
 }
 
 const withMDX = nextMDX({

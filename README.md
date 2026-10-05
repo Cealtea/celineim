@@ -37,4 +37,15 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 ## Production
 
-The site is deployed on Vercel.
+The site is built as a static export (`out/`) and served by a Cloudflare Worker using
+[Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/) (see `wrangler.jsonc`).
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+Pushes to `main` are deployed automatically by Cloudflare (build command `npm run build`, deploy command `npx wrangler deploy`).
+
+Note: Workers limits each asset to 25 MiB, so files larger than that are listed in `public/.assetsignore`.
