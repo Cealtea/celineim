@@ -1,0 +1,56 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { TextLink, ThankYouLink } from '@/components/Links'
+
+export const article = {
+  author: 'Celine',
+  date: '2026-10-13',
+  title: "Introducing Niki's Fund on Waggle",
+  description:
+    "Why we created Niki's Fund to help pet owners pay for emergency vet care.",
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default ({ children }) => <ArticleLayout article={article}>{children}</ArticleLayout>
+
+## It started with Niki
+
+If you follow <TextLink href="https://instagram.com/nikifromthebay">Niki</TextLink>, you might know that my cat
+needed an expensive knee surgery.
+
+We were lucky enough to be able to pay for it. But it made me think about all the families who can't.
+Nobody should have to choose between paying their rent and saving their pet.
+
+That's why we created <TextLink href="https://www.waggle.org/sponsors/niki-s-fund">Niki's Fund</TextLink>.
+
+## What is Waggle?
+
+<TextLink href="https://www.waggle.org">Waggle</TextLink> is a 501c3 non profit crowdfunding platform that helps
+pet owners who are struggling financially pay for emergency veterinary care.
+
+When a pet needs treatment that the family can't afford, a campaign is created on Waggle.
+Donors can then give directly to help that specific animal.
+
+## What does Niki's Fund do?
+
+Niki's Fund supports pet owners who face unexpected illnesses or accidents, with treatment costs beyond what most
+families can afford.
+
+> Our goal is simple: making sure money never prevents beloved animal companions from getting the care they need.
+
+## The pets we helped
+
+You can see all the pets Niki's Fund has helped on <TextLink href="https://www.waggle.org/sponsors/niki-s-fund">our Waggle sponsor page</TextLink>.
+
+Every one of them is a pet that got a second chance, and a family that didn't have to say goodbye too early.
+
+## Thank you, Niki
+
+Since I was a kid I have been crazy about animals, and this is one of the projects I am the most proud of.
+
+Thank you Niki for the inspiration!
+
+<ThankYouLink/>
