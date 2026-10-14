@@ -10,7 +10,8 @@ import {
   LinkedInIcon,
   SoundcloudIcon,
   DiscordIcon,
-  MailIcon
+  MailIcon,
+  WaggleIcon
 } from '@/components/Icons'
 import { TextLink } from '@/components/Links'
 import portraitImage from '@/images/celine.jpg'
@@ -90,7 +91,22 @@ export default function About() {
             <p>
               Today, I’m a full stack senior software engineer with a preference for backend. I work for <TextLink href="https://instrumentl.com">Instrumentl</TextLink>,  a grant management platform for non-profits.
             </p>
-            
+            <h2 className="pt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+              Philanthropy
+            </h2>
+            <p>
+              When Niki needed an expensive knee surgery, we were lucky enough to be able to cover it, but we know many families can&apos;t.
+              That&apos;s why we created <TextLink href="https://www.waggle.org/sponsors/niki-s-fund">Niki&apos;s Fund</TextLink> on <TextLink href="https://www.waggle.org">Waggle</TextLink>,
+              a 501c3 non profit crowdfunding platform that helps pet owners pay for emergency veterinary care.
+            </p>
+            <p>
+              Niki&apos;s Fund supports pet owners facing unexpected illnesses or accidents with treatment costs beyond what most families can afford.
+              We give starting contributions to campaigns on Waggle to jumpstart their fundraising, so that financial constraints don&apos;t prevent
+              beloved animal companions from getting the care they need.
+            </p>
+            <p>
+              You can <TextLink href="https://www.waggle.org/sponsors/niki-s-fund">see the pets Niki&apos;s Fund has helped</TextLink> on Waggle.
+            </p>
           </div>
         </div>
         <div className="lg:pl-20">
@@ -128,6 +144,12 @@ export default function About() {
               icon={LinkIcon}
               className="mt-4">
               Virtual Business Card
+            </SocialLink>
+            <SocialLink
+              href="https://www.waggle.org/sponsors/niki-s-fund"
+              icon={WaggleIcon}
+              className="mt-4">
+              Niki&apos;s Fund on Waggle
             </SocialLink>
           </ul>
         </div>

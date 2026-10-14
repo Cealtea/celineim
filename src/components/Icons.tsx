@@ -93,6 +93,18 @@ export function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+export function WaggleIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <ellipse cx="5" cy="10.5" rx="2" ry="2.6" transform="rotate(-20 5 10.5)" />
+      <ellipse cx="9.2" cy="5.8" rx="2.1" ry="2.8" transform="rotate(-8 9.2 5.8)" />
+      <ellipse cx="14.8" cy="5.8" rx="2.1" ry="2.8" transform="rotate(8 14.8 5.8)" />
+      <ellipse cx="19" cy="10.5" rx="2" ry="2.6" transform="rotate(20 19 10.5)" />
+      <path d="M12 11c-2.2 0-3.6 1.9-4.8 3.6-1 1.4-2.7 2.3-2.7 4.1 0 1.5 1.2 2.6 2.7 2.6 1.6 0 2.8-.8 4.8-.8s3.2.8 4.8.8c1.5 0 2.7-1.1 2.7-2.6 0-1.8-1.7-2.7-2.7-4.1C15.6 12.9 14.2 11 12 11Z" />
+    </svg>
+  )
+}
+
 export function TwitterIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
